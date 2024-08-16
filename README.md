@@ -19,7 +19,8 @@ This project demonstrates the process of creating a custom Git server with Gitwe
 ## Understanding Architecture
 
 Git is a distributed version control system that allows multiple developers to work on the same project without overwriting each other's work. The architecture involves a server where the main repository is stored, and clients (developers) who clone, pull, and push changes to and from the server.
-`mermaid
+
+```mermaid
 graph LR
     A[PC: Client Machine 1] -- Push/Pull --> B[(Server: Git Server)]
     B -- Push/Pull --> A
@@ -30,6 +31,7 @@ graph LR
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style C fill:#f9f,stroke:#333,stroke-width:2px
     style B fill:#bbf,stroke:#333,stroke-width:2px
+
 
 ## Setting Up Cloud Server for Git
 
