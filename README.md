@@ -47,6 +47,5 @@ graph LR
    
    ```bash
    ssh -i /path/to/your-key.pem ubuntu@your-ec2-public-ip
-
-   ![Screenshot from 2024-08-16 11-12-57](https://github.com/user-attachments/assets/9579d128-1a09-4f54-8d64-a6527dc39edb)
-
+### Code Breakdown
+- **`![Screenshot from 2024-08-16 11-12-57](https://github.com/user-attachments/assets/9579d128-1a09-4f54-8d64-a6527dc39edb)`**: This is the Markdown code to display the image. Replace `https://github.com/user-attachments/assets/9579d128-1a09-4f54-8d64-a6527dc39edb` with the actual URL where your image is hosted.
