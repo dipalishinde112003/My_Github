@@ -13,10 +13,18 @@ Table of Contents
     Setting Up Git UI with Gitweb
     Conclusion
 ```mermaid
-graph TD
-    A[Client Machine 1] --> |Push/Pull| B[Git Server]
-    C[Client Machine 2] --> |Push/Pull| B[Git Server]
-    B --> |Pull/Push| A
-    B --> |Pull/Push| C
+graph LR
+    subgraph Clients
+        A[Client Machine 1]
+        C[Client Machine 2]
+    end
+    B[(Git Server)]
+    A --> |Push/Pull| B
+    C --> |Push/Pull| B
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style C fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:2px
+
 
 
