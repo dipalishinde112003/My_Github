@@ -31,13 +31,3 @@ graph LR
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style C fill:#f9f,stroke:#333,stroke-width:2px
     style B fill:#bbf,stroke:#333,stroke-width:2px
-
-
-## Setting Up Cloud Server for Git
-
-1. **Choose a Cloud Provider**: Select a cloud provider like AWS, Azure, or DigitalOcean.
-2. **Create a Virtual Machine (VM)**: 
-   - Example: For DigitalOcean, create a droplet with Ubuntu 20.04.
-   
-   ```bash
-   ssh root@your-server-ip
