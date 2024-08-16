@@ -31,3 +31,19 @@ graph LR
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style C fill:#f9f,stroke:#333,stroke-width:2px
     style B fill:#bbf,stroke:#333,stroke-width:2px
+
+## Setting Up Cloud Server for Git
+
+1. **Create an EC2 Instance on AWS**:
+   - Log in to your AWS Management Console.
+   - Navigate to the EC2 Dashboard and click on "Launch Instance."
+   - Name your instance `My_Git_Server` and choose an Amazon Machine Image (AMI) like Ubuntu 20.04.
+   - Select an instance type (e.g., t2.micro for the free tier).
+   - Configure the instance and launch it with a key pair for SSH access.
+
+2. **Connect to the EC2 Instance using SSH**:
+   - Once the instance is running, note the public IP address or DNS name.
+   - Connect to the instance using SSH from your terminal:
+   
+   ```bash
+   ssh -i /path/to/your-key.pem ubuntu@your-ec2-public-ip
