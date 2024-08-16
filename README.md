@@ -12,4 +12,11 @@ Table of Contents
     Understanding How Git Stores Commits
     Setting Up Git UI with Gitweb
     Conclusion
+```mermaid
+graph TD
+    A[Client Machine 1] --> |Push/Pull| B[Git Server]
+    C[Client Machine 2] --> |Push/Pull| B[Git Server]
+    B --> |Pull/Push| A
+    B --> |Pull/Push| C
+
 
