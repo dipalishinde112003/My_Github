@@ -12,25 +12,15 @@ Table of Contents
     Understanding How Git Stores Commits
     Setting Up Git UI with Gitweb
     Conclusion
-```mermaid
+````mermaid
 graph LR
-    subgraph Clients
-        A[Client Machine 1]
-        C[Client Machine 2]
-    end
-    B[(Git Server)]
-
-    A -- Push/Pull --> B
+    A[PC: Client Machine 1] -- Push/Pull --> B[(Server: Git Server)]
     B -- Push/Pull --> A
-
-    C -- Push/Pull --> B
+    
+    C[PC: Client Machine 2] -- Push/Pull --> B
     B -- Push/Pull --> C
-
-    A -- Push/Pull --> C
-    C -- Push/Pull --> A
 
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style C fill:#f9f,stroke:#333,stroke-width:2px
     style B fill:#bbf,stroke:#333,stroke-width:2px
-
 
